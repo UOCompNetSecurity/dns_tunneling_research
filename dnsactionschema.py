@@ -1,3 +1,7 @@
+"""
+Detector -> Resolver Control Message whenever an action is determined on a domain through classification/analysis
+"""
+
 from dataclasses import dataclass
 from enum import Enum
 

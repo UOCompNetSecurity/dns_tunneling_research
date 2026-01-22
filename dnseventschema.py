@@ -1,3 +1,7 @@
+"""
+Resolver -> Detector Event for each DNS query
+"""
+
 from dataclasses import dataclass
 from typing import Optional, List
 from enum import Enum
