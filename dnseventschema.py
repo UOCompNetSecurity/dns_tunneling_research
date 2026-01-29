@@ -6,10 +6,6 @@ from dataclasses import dataclass
 from typing import Optional 
 from enum import Enum
 
-class DNSProtocol(str, Enum):
-    UDP = "UDP"
-    TCP = "TCP"
-
 
 # Only allowed types. 
 class DNSRRType(Enum): 
@@ -28,7 +24,6 @@ class DNSQueryEvent:
     client_ip: str
     qname: str
     rrtype: DNSRRType
-    protocol: DNSProtocol
     query_size: int
     edns_size: Optional[int]
 
